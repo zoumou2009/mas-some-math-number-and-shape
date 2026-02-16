@@ -52,7 +52,7 @@ void putfengexian(int a){for (int i=0; i<a+1; i++)putchar('=');putchar('\n');}
 int caidan1(void){
 putfengexian(60);
 puts("1 创建杨辉(帕斯卡)三角,最大30次幂");
-puts("2 计算具体二项式系数(组合数),排列数,底数最大60");
+puts("2 计算具体二项式系数(组合数),底数最大60");
 puts("3 计算排列数,底数最大60");
 puts("4 清空输出文件");
 puts("5 关闭程序");
@@ -158,7 +158,7 @@ if(a>=1&&a<=4&&getchar()=='\n')return a;
 else if(c=='\n')puts("别闹了孩子");
 else{puts("无法解析你所输入的指示,输入1,2,3,4好么");while (getchar() != '\n') continue;}
 }}
-int if1_2(void){int a,b,c,g;unsigned long long d;puts("这是计算下标60以内排列数的程序");
+int if1_2(void){int a,b,c,g;unsigned long long d;puts("这是计算下标60以内组合数的程序");
 get:puts("请输入下标(不超过60的非负数)");a=getmax5(60);printf("下标%d\n",a);
 puts("请输入上标(不超过下标的非负数)");b=getmax5(a);printf("上标%d\n",b);
 d=masc(a,b);c=maswei(d);printf("计算完成结果为%d位数,请选择相应模式\n",c);
